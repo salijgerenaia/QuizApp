@@ -52,11 +52,11 @@ export class QuestionComponent implements OnInit {
         this.resetCounter();
         this.getProgressPercent();
       }, 1000);
-
-
-    } else {
+    } 
+    else {
       setTimeout(() => {
         this.currentQuestion++;
+        this.inCorrectAnswer++;
         this.resetCounter();
         this.getProgressPercent();
       }, 1000);
